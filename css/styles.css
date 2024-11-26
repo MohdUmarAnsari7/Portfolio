@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(18, 18, 62);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+.left {
+    font-size: 2.3rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0;
+    align-items: center;
+}
+
+.firstSection>div {
+    width: 40%;
+}
+
+.leftSection {
+    font-size: 3rem;
+}
+
+.rightSection img {
+    width: 80%;
+}
+
+.purple {
+    color: rgb(171, 89, 248);
+    font-weight: 700;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: lavender;
+    font-size: 1.05rem;
+}
+
+#element {
+    color: rgb(171, 89, 248);
+    font-weight: 700;
+}
+
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+
+main hr {
+    border: 0;
+    background: #9c97f1;
+    height: 1.2px;
+    margin: 60px 85px;
+}
+
+.secondSection h1 {
+    font-size: 1.9rem;
+}
+
+.text-gray {
+    color: gray;
+}
+
+.secondSection .box {
+    background: white;
+    width: 80vw;
+    height: 2px;
+    margin: 85px 0;
+    display: flex;
+}
+
+.secondSection .vertical {
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 44px;
+}
+
+.vertical-title {
+    position: relative;
+    width: 150px;
+    left: -47px;
+    top: 98px;
+    font-size: 17px;
+    font-weight: 550;
+    color: rgb(171, 89, 248);
+}
+
+.image-top {
+    width: 70px;
+    position: relative;
+    top: -70px;
+    left: -34px;
+}
+
+footer {
+    background-color: #1b1b38;
+    /*height: 233px;*/
+}
+
+.footer {
+    display: flex;
+    padding: 23px 70px;
+    justify-content: space-evenly;
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.footer .footer-first h3{
+    font-size: 30px;
+    color: white;
+}
+
+.footer .footer-first .Social span{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(167, 72, 255);
+}
+
+footer .footer-rights{
+    text-align: center;
+    color: gray;
+    padding: 12px 0;
+}
+
+.leftSection .btn{
+    padding: 12px;
+    background-color: #1f187a;
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.4s ease;
+}
+
+.leftSection .btn:hover{
+    background-color: rgb(171, 89, 248);
+
+}
+
+.leftSection .buttons{
+    padding: 18px;
+}
+
+footer .footer .footer-second ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+    .firstSection{
+      flex-direction: column-reverse;
+    }
+    .box{
+        flex-direction: column;
+
+    }
+    .secondSection .vertical{
+        height: unset;
+    }
+    footer{
+        display: none;
+    }
+    .vertical-title {
+        position: relative;
+        width: 201px;
+        left: 100px;
+        top: 6px;
+        font-size: 17px;
+        font-weight: 550;
+        color: rgb(171, 89, 248);
+    }
+    .image-top {
+        width: 70px;
+        position: relative;
+        top: 55px;
+        left: -34px;
+    }
+    .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 110vh;
+    }
+    .secondSection .box {
+        background: white;
+        width: 50vw;
+        height: 2px;
+        margin: 85px 0;
+        display: flex;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .leftSection{
+        width: 80% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .rightSection {
+        width: 685px !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .secondSection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* for small screen */
+    @media screen and (max-width: 400px) {
+        nav ul li {
+            list-style: none;
+            margin: 0 7px;
+        }
+        .left{
+            font-size: 1.3rem;
+        }
+        .rightSection{
+            width: 365px !important;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .leftSection {
+            font-size: 1.8rem;
+        }
+        .leftSection .buttons {
+            padding: 10px;
+        }
+
+    }
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umar Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header> 
+        <nav>
+            <div class="left">Umar's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Hi, My name is <span class="purple">Umar</span></div>
+
+                <div>And I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn" onclick="visitGitHub()">Visit Github</button>
+                    <button class="btn" onclick="visitLinkedIn()">Visit Linked-in</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="images/bg.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class = " text-gray">What i have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="images/powerapps.png" alt="">
+                </div>
+                <div class="vertical-title">
+                    PowerApps
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="images/powerautomate.png" alt="">
+                </div>
+                <div class="vertical-title">
+                    Power Automate
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="images/c++.png" alt="">
+                </div>
+                <div class="vertical-title">
+                    C/C++
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="images/csharp.png" alt="">
+                </div>
+                <div class="vertical-title">
+                    C#/.NET
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="images/html.png" alt="">
+                </div>
+                <div class="vertical-title">
+                    Html/Css/Javascript
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="images/python.png" alt="">
+                </div>
+                <div class="vertical-title">
+                    Python
+                </div>
+
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Connect with me on</h3>
+                <div class="Social"><span>Social Platforms!</span></div>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a onclick="visitGitHub()">Github</a></li>
+                    <li><a onclick="visitLinkedIn()">Linked-in</a></li>
+                    <li><a  onclick="visitInstagram()">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            umarsportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['PowerApps Developer','PowerAutomate Developer','Software Developer','Web Developer','Graphic Designer' ],
+          typeSpeed: 70,
+        });
+      </script>
+</body>
+</html>
